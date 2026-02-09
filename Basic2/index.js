@@ -68,3 +68,26 @@ rect2.draw();
 // };
 // inc1(u)
 // console.log(u.value);
+
+// Cloning of objects
+//  1. Through Iterating 
+// let obj1={
+// a:10, b:20, c:30};
+// let obj2={};
+// for (let i in obj1){
+// obj2[i]=obj1[i];
+// }
+// console.log(obj2);
+
+// 2. Through Object.assign
+let obj={
+a:10, b:20, c:30};
+let obj1={};
+obj1=Object.assign({},obj);
+console.log(obj1);
+
+// 3. Through Spread operator
+let pass={a:10, b:20, c:30};
+letpass1={};
+pass1={...pass};
+console.log(pass1); 
